@@ -2,13 +2,6 @@ binaries = ["chezmoi"]
 sha256sums = {
 }
 
-on "unpack" {
-  rename {
-    from = "${root}/chezmoi-${os}-${arch}"
-    to = "${root}/chezmoi"
-  }
-}
-
 platform "darwin" "amd64" {
   source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi-${os}-${arch}"
 }
@@ -19,6 +12,13 @@ platform "darwin" "arm64" {
 
 platform "linux" "amd64" {
   source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi-${os}-${arch}"
+}
+
+on "unpack" {
+  rename {
+    from = "${root}/chezmoi-${os}-${arch}"
+    to = "${root}/chezmoi"
+  }
 }
 
 description = "Manage your dotfiles across multiple diverse machines, securely."
