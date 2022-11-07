@@ -5,15 +5,15 @@ sha256sums = {
 }
 
 platform "darwin" "amd64" {
-  source = "https://github.com/gohugoio/hugo/releases/download/v${version}/hugo_${version}_${os}-universal.tar.gz"
+  source = "https://github.com/gohugoio/hugo/releases/download/v${version}/hugo_extended_${version}_${os}-universal.tar.gz"
 }
 
 platform "darwin" "arm64" {
-  source = "https://github.com/gohugoio/hugo/releases/download/v${version}/hugo_${version}_${os}-universal.tar.gz"
+  source = "https://github.com/gohugoio/hugo/releases/download/v${version}/hugo_extended_${version}_${os}-universal.tar.gz"
 }
 
 platform "linux" "amd64" {
-  source = "https://github.com/gohugoio/hugo/releases/download/v${version}/hugo_${version}_${os}-${arch}.tar.gz"
+  source = "https://github.com/gohugoio/hugo/releases/download/v${version}/hugo_extended_${version}_${os}-${arch}.tar.gz"
 }
 
 description = "Static blog generator"
