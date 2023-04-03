@@ -9,14 +9,17 @@ version "2.4.0" {
 
   platform "darwin" "amd64" {
     source = "https://github.com/DarthSim/overmind/releases/download/v${version}/overmind-v${version}-macos-amd64.gz"
+    on unpack { rename { from = "${root}/overmind-v${version}-macos-amd64" to = "${root}/overmind"}}
   }
 
   platform "darwin" "arm64" {
     source = "https://github.com/DarthSim/overmind/releases/download/v${version}/overmind-v${version}-macos-${arch}.gz"
+    on unpack { rename { from = "${root}/overmind-v${version}-macos-${arch}" to = "${root}/overmind"}}
   }
 
   platform "linux" "amd64" {
     source = "https://github.com/DarthSim/overmind/releases/download/v${version}/overmind-v${version}-${os}-amd64.gz"
+    on unpack { rename { from = "${root}/overmind-v${version}-${os}-amd64" to = "${root}/overmind"}}
   }
 }
 
