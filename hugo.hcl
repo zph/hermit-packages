@@ -2,6 +2,8 @@ binaries = ["hugo"]
 sha256sums = {
   "https://github.com/gohugoio/hugo/releases/download/v0.105.0/hugo_0.105.0_linux-amd64.tar.gz": "f5d76d69c4dbe56dae506ebadf03acca414f8b2905bce089a1de298515324daa",
   "https://github.com/gohugoio/hugo/releases/download/v0.105.0/hugo_0.105.0_darwin-universal.tar.gz": "4db24a26ab07f061c13ffc8fb459177a981df4ca48630f5c6da85243e24640ad",
+  "https://github.com/gohugoio/hugo/releases/download/v0.105.0/hugo_extended_0.105.0_linux-amd64.tar.gz": "3cd7b9d2fc3812b5d0a130b1735e5894b273210d6e7c03f68facad26b2d2e8a9",
+  "https://github.com/gohugoio/hugo/releases/download/v0.105.0/hugo_extended_0.105.0_darwin-universal.tar.gz": "7d4189cefa61bb5a6d077880a1f7a6e18c5335a3ac469cc5a1e7ee7ce0512206",
 }
 
 platform "darwin" "amd64" {
