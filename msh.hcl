@@ -15,14 +15,17 @@ platform "linux" "amd64" {
 description = "Tool for mongo cluster node discovery to connect via mongo binary."
 homepage = "https://github.com/zph/msh"
 
-version "0.1.0" {
+version "0.1.2" "0.1.1" {
   auto-version {
     github-release = "zph/msh"
   }
 }
 
 sha256sums = {
-  "https://github.com/zph/msh/releases/download/0.1.0/msh-x86_64-unknown-linux-gnu.tgz": "ff93e582eac62aa45a74ec62cd4f4f6cb873fa6e682b6a10842a31e39c91417e",
-  "https://github.com/zph/msh/releases/download/0.1.0/msh-x86_64-apple-darwin.tgz": "28b268f033a6cfa6c76d109a2a87921ca80efcb895fed3fade43c585707841d2",
-  "https://github.com/zph/msh/releases/download/0.1.0/msh-aarch64-apple-darwin.tgz": "d790485a0035dfc1c6669b9b5e0ab707b09bf696355086e5893793bae5fcfee7",
+  "https://github.com/zph/msh/releases/download/0.1.1/msh-x86_64-unknown-linux-gnu.tgz": "e3fac41a1def9582ed15c65e762952aed0e405d5482333b4e2fff7a73c245496",
+  "https://github.com/zph/msh/releases/download/0.1.1/msh-x86_64-apple-darwin.tgz": "eef2f559e5dd804cebb13060a32d93d24b9aa2bbc2bc5af4966d26d8d832e765",
+  "https://github.com/zph/msh/releases/download/0.1.1/msh-aarch64-apple-darwin.tgz": "5775e8a7c4d58f09b2df70aaef126ec29261de5566eee3ec68ef40b4cdcaec9c",
+  "https://github.com/zph/msh/releases/download/0.1.2/msh-aarch64-apple-darwin.tgz": "21f54229b65b36b2be5d7451d81509e0f2a6060ac91a25c76b6371bba809e240",
+  "https://github.com/zph/msh/releases/download/0.1.2/msh-x86_64-unknown-linux-gnu.tgz": "50a24f278176ad0eb7af48eb30d8ea738bc59fdb5fa0b53d5c70ee5ec6136f79",
+  "https://github.com/zph/msh/releases/download/0.1.2/msh-x86_64-apple-darwin.tgz": "2f663c2ecc50f23969b7035e9d7c2e8556b1c2c5458cee562917f0ee7149ebaf",
 }
