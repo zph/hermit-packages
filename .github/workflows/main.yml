@@ -22,5 +22,5 @@ jobs:
       env:
         CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
       run: |
-        git add "$CHANGED_FILES"
+        git add $CHANGED_FILES
         git commit -m "[bot] Auto Version Update"
