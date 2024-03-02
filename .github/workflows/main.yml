@@ -1,0 +1,25 @@
+name: Auto Updater
+
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+
+jobs:
+  auto-update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Activate hermit environment
+      run: source bin/activate-hermit && just update
+    - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v19
+        id: verify-changed-files
+        with:
+          files: *.hcl
+    - name: Run step only when any of the above files change.
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
+        run: |
+          git add "$CHANGED_FILES"
+          git commit -m "[bot] Auto Version Update"
