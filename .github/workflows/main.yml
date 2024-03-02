@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - uses: extractions/setup-just@v1
     - name: Activate hermit environment
       run: source bin/activate-hermit && just update
     - name: Verify Changed files
