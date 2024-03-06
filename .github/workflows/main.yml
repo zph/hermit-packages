@@ -3,7 +3,7 @@ name: Auto Updater
 on:
   schedule:
     # Avoid top of hour runs
-    - cron:  '49 * * * *'
+    - cron:  '49 */8 * * *'
 
 jobs:
   auto-update:
