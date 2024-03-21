@@ -1,4 +1,5 @@
-binaries = ["bin/vector"]
+// NOTE: this is terrible but expedient
+binaries = ["vector-x86_64-apple-darwin/bin/vector"]
 test = "vector --version"
 
 platform "darwin" "amd64" {
