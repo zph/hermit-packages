@@ -1,4 +1,4 @@
-binaries = ["vector"]
+binaries = ["bin/vector"]
 test = "vector --version"
 
 platform "darwin" "amd64" {
