@@ -20,7 +20,7 @@ platform "linux" "arm64" {
 description = "Modern replacement for sub to turn script directory into SDK"
 homepage = "https://github.com/zph/tome"
 
-version "0.11.2-rc3" "0.0.0-rc17" "0.0.0-rc19" "0.0.0-rc20" {
+version "0.11.2-rc3" "0.0.0-rc17" "0.0.0-rc19" "0.0.0-rc20" "0.0.0-rc21" {
   auto-version {
     github-release = "zph/tome"
   }
@@ -39,4 +39,7 @@ sha256sums = {
   "https://github.com/zph/tome/releases/download/v0.0.0-rc20/tome_0.0.0-rc20_linux_amd64.tar.gz": "03a4bac9640bd2be8bf06727b47c2ee14acb087f4749ac496461611094f2e463",
   "https://github.com/zph/tome/releases/download/v0.0.0-rc20/tome_0.0.0-rc20_darwin_amd64.tar.gz": "3dcf8d377a4e8c18538be07b95105596607f99be95e7426c65eb3353d35c9e34",
   "https://github.com/zph/tome/releases/download/v0.0.0-rc20/tome_0.0.0-rc20_darwin_arm64.tar.gz": "a0fca45ea5a9c37a21ad3b343f38004cd15dc028f207599752f075a64fa07784",
+  "https://github.com/zph/tome/releases/download/v0.0.0-rc21/tome_0.0.0-rc21_linux_amd64.tar.gz": "15b86ae9a9430e0afb73cb8acb70c8fe66cee5d7889f55c7e81e9dce7bba8495",
+  "https://github.com/zph/tome/releases/download/v0.0.0-rc21/tome_0.0.0-rc21_darwin_amd64.tar.gz": "3517f5c9073999e3390168201ddb86317f5d321e8735a738a9d9f3db126795a8",
+  "https://github.com/zph/tome/releases/download/v0.0.0-rc21/tome_0.0.0-rc21_darwin_arm64.tar.gz": "354afe654f2a16ec8e0c13b30884fb1bd42cfe575c9d48c4c30e6d935dc6bd83",
 }
