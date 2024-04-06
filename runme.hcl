@@ -16,7 +16,7 @@ platform "linux" "amd64" {
 description = "Runme is a dynamic runbook tool by Stateful."
 homepage = "https://github.com/stateful/runme"
 
-version "2.2.0" "3.0.2" "3.1.1" "3.2.0" "3.2.1" "3.2.2" "3.2.3" "3.2.4" {
+version "2.2.0" "3.0.2" "3.1.1" "3.2.0" "3.2.1" "3.2.2" "3.2.3" "3.2.4" "3.2.5" {
   auto-version {
     github-release = "stateful/runme"
     version-pattern = "v(.*)"
@@ -48,4 +48,7 @@ sha256sums = {
   "https://download.stateful.com/runme/3.2.4/runme_darwin_x86_64.tar.gz": "2c2446784b5e90b4b20ed973a3e4f0d5259b4bae5dc641165ae1437989dcd7b5",
   "https://download.stateful.com/runme/3.2.4/runme_linux_x86_64.tar.gz": "16347e04c6a20b52a95b20867e5ffcc6b2cdff4f5e5f6257e9817d703fa4e4fa",
   "https://download.stateful.com/runme/3.2.4/runme_darwin_arm64.tar.gz": "3e10852287938acf7663562937a1430a7b3feed4da0fe9ec6300d75d81b8402f",
+  "https://download.stateful.com/runme/3.2.5/runme_darwin_arm64.tar.gz": "d3af022644d7fd82f162302a06355c200a61c2546962991e092dde11da6b250a",
+  "https://download.stateful.com/runme/3.2.5/runme_darwin_x86_64.tar.gz": "7a2d0f27be467c1f403564e7683e90880808ac715663dbb5d318c355db85c124",
+  "https://download.stateful.com/runme/3.2.5/runme_linux_x86_64.tar.gz": "0a9ffc6d10ed8413cc3d5362cdfd2820ad251aea3ca80aa34ae10fcbddb6f29c",
 }
