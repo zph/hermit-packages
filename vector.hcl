@@ -14,7 +14,7 @@ platform "darwin" "arm64" {
 description = "Vector.dev metrics tool"
 homepage = "https://github.com/vectordotdev/vector"
 
-version "0.36.1" "0.37.0" {
+version "0.36.1" "0.37.0" "0.37.1" {
   auto-version {
     github-release = "vectordotdev/vector"
   }
@@ -23,4 +23,5 @@ version "0.36.1" "0.37.0" {
 sha256sums = {
   "https://github.com/vectordotdev/vector/releases/download/v0.36.1/vector-0.36.1-x86_64-apple-darwin.tar.gz": "c6880629bfa01516dee8eb915bbc79cfadfa108ed635054659bb3ea5a83096bc",
   "https://github.com/vectordotdev/vector/releases/download/v0.37.0/vector-0.37.0-x86_64-apple-darwin.tar.gz": "3e19031b2848065a2336eee606fd021a957b2314eea95e24b39567a754d276af",
+  "https://github.com/vectordotdev/vector/releases/download/v0.37.1/vector-0.37.1-x86_64-apple-darwin.tar.gz": "999227293eb39f6d0efb24b672b9a4a4ce1a0c288fbe45e9d225c9ca3b3f76c8",
 }
