@@ -63,14 +63,15 @@ const replaceOsArch = (url: string) => {
 
 
 const darwinArm = replaceOsArch(darwin.filter(url => url.includes("arm64") || url.includes("aarch64"))[0])
+const linuxArm = replaceOsArch(linux.filter(url => url.match("arm64") || url.includes("aarch64"))[0])
 const darwinAmd = replaceOsArch(darwin.filter(url => url.includes("x86_64") || url.includes("amd64"))[0])
 const linuxAmd = replaceOsArch(linux.filter(url => url.includes("x86_64") || url.includes("amd64"))[0])
-const linuxArm = replaceOsArch(linux.filter(url => url.includes("arm64") || url.includes("aarch64"))[0])
 
+const binary = repo.split("/")[1]
 const file = template({
   tagName: tagNameWithoutV,
   description,
-  binary: repo.split("/")[1],
+  binary,
   homepage: url,
   repo,
   darwinArm,
@@ -80,6 +81,7 @@ const file = template({
   }
 )
 
+console.log({urls})
 console.log(file)
 
 Deno.writeTextFileSync(`${repo.split("/")[1]}.hcl`, template({
