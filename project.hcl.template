@@ -1,0 +1,29 @@
+binaries = ["dprint"]
+test = "dprint -v"
+
+platform "darwin" "amd64" {
+  source = "https://github.com/dprint/dprint/releases/download/${version}/dprint-x86_64-apple-${os}.zip"
+#  on unpack {
+#    rename { from = "${root}/jq-osx-amd64" to = "${root}/jq" }
+#  }
+}
+
+platform "darwin" "arm64" {
+  source = "https://github.com/dprint/dprint/releases/download/${version}/dprint-aarch64-apple-${os}.zip"
+#  on unpack {
+#    rename { from = "${root}/jq-osx-amd64" to = "${root}/jq" }
+#  }
+}
+
+platform "linux" "amd64" {
+  source = "https://github.com/dprint/dprint/releases/download/${version}/dprint-x86_64-unknown-linux-musl.zip"
+}
+
+description = "Formatter for many languages"
+homepage = "https://github.com/dprint/dprint"
+
+version "0.45.1" {
+  auto-version {
+    github-release = "dprint/dprint"
+  }
+}
