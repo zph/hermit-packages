@@ -7,6 +7,10 @@ binaries = ["${binary}"]
 test = "${binary} -v"
 homepage = "${homepage}"
 description = "${description}"
+vars = {
+  "os_": "\${os}",
+  "arch_": "\${arch}",
+}
 
 platform "darwin" "amd64" {
   source = "${darwinAmd}"
@@ -36,6 +40,10 @@ version "${tagName}" {
     github-release = "${repo}"
   }
 }
+
+channel "latest" {
+  update = "72h"
+}
 `
 
 const repo = Deno.args[0]
@@ -49,9 +57,8 @@ const tagNameWithoutV = tagName.replace("v", "")
 const urls = assets.map(({url}) => url)
 
 
-const darwin = urls.filter(url =>
-  url.match(/(darwin|apple|osx)/i) != null)
-const linux = urls.filter(url => url.match(/(linux)/i) != null)
+const darwin = urls.filter(url => url.match(/(darwin|apple|osx)/i))
+const linux = urls.filter(url => url.match(/(linux)/i))
 
 const replaceOsArch = (url: string) => {
   return url.replaceAll("darwin", "\${os}")
@@ -61,11 +68,17 @@ const replaceOsArch = (url: string) => {
             .replaceAll(tagNameWithoutV, "\${version}")
 }
 
+const amd64Regexp = /(amd64|x86_64)/i
+const arm64Regexp = /(arm64|aarch64)/i
 
-const darwinArm = replaceOsArch(darwin.filter(url => url.includes("arm64") || url.includes("aarch64"))[0])
-const linuxArm = replaceOsArch(linux.filter(url => url.match("arm64") || url.includes("aarch64"))[0])
-const darwinAmd = replaceOsArch(darwin.filter(url => url.includes("x86_64") || url.includes("amd64"))[0])
-const linuxAmd = replaceOsArch(linux.filter(url => url.includes("x86_64") || url.includes("amd64"))[0])
+const findByOsArch = (urls: string[], regexp: RegExp) => {
+  return replaceOsArch(urls.filter(url => url.match(regexp))[0])
+}
+
+const darwinArm = findByOsArch(darwin, arm64Regexp)
+const linuxArm = findByOsArch(linux, arm64Regexp)
+const darwinAmd = findByOsArch(darwin, amd64Regexp)
+const linuxAmd = findByOsArch(linux, amd64Regexp)
 
 const binary = repo.split("/")[1]
 const file = template({
