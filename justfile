@@ -7,3 +7,6 @@ lint:
 
 update:
   hermit manifest auto-version *.hcl
+
+create FILENAME:
+  ./bin/manifest-maker.ts {{FILENAME}}
