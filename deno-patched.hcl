@@ -14,5 +14,5 @@ version "1.43.0-jupyter" {
 }
 
 sha256sums = {
-  "https://github.com/zph/deno/releases/download/v1.43.0-jupyter/deno": "46cff80d62117b14c493b098ca33e87f85bba78b0d7ed5c77a9083c46a8a4ccb",
+  "https://github.com/zph/deno/releases/download/v1.43.0-jupyter/deno": "d38a01732c4fc968e5dedc805f57d41d40af5e3f4977a6c2a99393f486e54f1d",
 }
