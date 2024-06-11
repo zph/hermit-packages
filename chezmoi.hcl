@@ -33,6 +33,9 @@ sha256sums = {
   "https://github.com/twpayne/chezmoi/releases/download/v2.48.2/chezmoi-darwin-amd64": "20d5ca23453f4fdfa7781df43cb50cea4e247dc8fcca8faa74c4628328040fa1",
   "https://github.com/twpayne/chezmoi/releases/download/v2.48.2/chezmoi-darwin-arm64": "213f4692019f06cbfa538d8786cdf12a13854554adce397f28f050b0015f2e54",
   "https://github.com/twpayne/chezmoi/releases/download/v2.48.2/chezmoi-linux-amd64": "0ff5080a33e58ffa0bdebc12428dba74f0fbc2102dbc6bf729b958fa3f4ee362",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.49.0/chezmoi-darwin-amd64": "ffa8bc5379254e001aaaae838f0098aa080d9db1abda7ec80d4608831089a6b5",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.49.0/chezmoi-darwin-arm64": "e1cde7b167cd25eb21ca82062749589dd0e1546ce42fca9298defa604aa8c090",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.49.0/chezmoi-linux-amd64": "aae66e3a69b1e89873ca4ffbc9b16d9035b86d22aae643800205778519e0856c",
 }
 
 platform "darwin" "amd64" {
@@ -58,7 +61,7 @@ description = "Manage your dotfiles across multiple diverse machines, securely."
 homepage = "https://chezmoi.io"
 
 version "2.26.0" "2.44.0" "2.45.0" "2.47.0" "2.47.1" "2.47.2" "2.47.3" "2.47.4"
-        "2.48.0" "2.48.1" "2.48.2" {
+        "2.48.0" "2.48.1" "2.48.2" "2.49.0" {
   auto-version {
     github-release = "twpayne/chezmoi"
   }
