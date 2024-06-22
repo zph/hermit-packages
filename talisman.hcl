@@ -32,7 +32,7 @@ on "unpack" {
 
 # v1.32.0 is broken for custom_severities, so I've forked it and patched
 # while waiting for maintainer action
-version "1.33.0-rc1" {
+version "v1.33.0-rc1" {
   auto-version {
     github-release = "zph/talisman"
   }
