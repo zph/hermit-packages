@@ -37,3 +37,7 @@ version "v1.33.0-rc1" {
     github-release = "zph/talisman"
   }
 }
+
+channel "latest" {
+  update = "72h"
+}
