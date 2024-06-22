@@ -8,20 +8,20 @@ vars = {
 }
 
 platform "darwin" "amd64" {
-  source = "https://github.com/zph/talisman/releases/download/untagged-baa7d22297412c3f3d1d/talisman_${os}_${arch}"
+  source = "https://github.com/zph/talisman/releases/download/v${version}/talisman_${os}_${arch}"
 }
 
 platform "darwin" "arm64" {
-  source = "https://github.com/zph/talisman/releases/download/untagged-baa7d22297412c3f3d1d/talisman_${os}_${arch}"
+  source = "https://github.com/zph/talisman/releases/download/v${version}/talisman_${os}_${arch}"
 }
 
-# platform "linux" "amd64" {
-#   source = "https://github.com/zph/talisman/releases/download/v${version}/talisman_${os}_${arch}"
-# }
-#
-# platform "linux" "arm64" {
-#   source = "https://github.com/zph/talisman/releases/download/v${version}/talisman_${os}_${arch}"
-# }
+platform "linux" "amd64" {
+  source = "https://github.com/zph/talisman/releases/download/v${version}/talisman_${os}_${arch}"
+}
+
+platform "linux" "arm64" {
+  source = "https://github.com/zph/talisman/releases/download/v${version}/talisman_${os}_${arch}"
+}
 
 on "unpack" {
   rename {
@@ -32,3 +32,8 @@ on "unpack" {
 
 # v1.32.0 is broken for custom_severities, so I've forked it and patched
 # while waiting for maintainer action
+version "1.33.0-rc1" {
+  auto-version {
+    github-release = "zph/talisman"
+  }
+}
