@@ -30,14 +30,19 @@ on "unpack" {
   }
 }
 
-# v1.32.0 is broken for custom_severities, so I've forked it and patched
-# while waiting for maintainer action
+// # v1.32.0 is broken for custom_severities, so I've forked it and patched
+// # while waiting for maintainer action
 version "1.33.0-rc1" {
   auto-version {
     github-release = "zph/talisman"
   }
 }
 
-channel "latest" {
-  update = "72h"
+sha256sums = {
+  "https://github.com/zph/talisman/releases/download/v1.33.0-rc1/talisman_darwin_amd64": "cc9b67c251b7af37131a46b94995aa94d3bb77bd9db26c83511b4246d307d702",
+  "https://github.com/zph/talisman/releases/download/v1.33.0-rc1/talisman_darwin_arm64": "8b5488d58e1105c8a5294694448d5dc2704faf7c4632759e998a788f6870a524",
+  "https://github.com/zph/talisman/releases/download/v1.33.0-rc1/talisman_linux_amd64": "4e46b8db72171d8a191ca01993ea2b549b39b53656bc2268f966b840f476e08e",
 }
+// channel "latest" {
+// update = "72h"
+// }
