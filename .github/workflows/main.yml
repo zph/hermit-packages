@@ -13,6 +13,8 @@ jobs:
     - uses: extractions/setup-just@v1
     - name: Activate hermit environment
       run: source bin/activate-hermit && just update
+      env:
+        HERMIT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Verify Changed files
       uses: tj-actions/verify-changed-files@v19
       id: verify-changed-files
