@@ -50,6 +50,8 @@ sha256sums = {
   "https://github.com/gohugoio/hugo/releases/download/v0.128.1/hugo_extended_0.128.1_darwin-universal.tar.gz": "b9f88dd51111b791d4e6812e776217a9134095f5b9702043210a28509124cc64",
   "https://github.com/gohugoio/hugo/releases/download/v0.128.2/hugo_extended_0.128.2_linux-amd64.tar.gz": "a83253c155d76c197f1bee375662e3a2bc8c2335d2ffdfa7ec43e59c38c412c5",
   "https://github.com/gohugoio/hugo/releases/download/v0.128.2/hugo_extended_0.128.2_darwin-universal.tar.gz": "6da69509e1633a2858d34d8fc5a0666ddcff109dbd90c1de7fe049aa50991582",
+  "https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_extended_0.129.0_linux-amd64.tar.gz": "14a4919808a10c876a2725dd0a119f979982c1636b099868fdbd358578093521",
+  "https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_extended_0.129.0_darwin-universal.tar.gz": "ea0f8a919e1abe5fa00c50a519a53d50dee90e990a29de4d5f2916a7cfbc718c",
 }
 
 platform "darwin" "amd64" {
@@ -69,7 +71,7 @@ description = "Static blog generator"
 version "0.105.0" "0.121.2" "0.123.4" "0.123.6" "0.123.7" "0.123.8" "0.124.0"
         "0.124.1" "0.125.0" "0.125.1" "0.125.2" "0.125.3" "0.125.4" "0.125.5" "0.125.6"
         "0.125.7" "0.126.0" "0.126.1" "0.126.2" "0.126.3" "0.127.0" "0.128.0" "0.128.1"
-        "0.128.2" {
+        "0.128.2" "0.129.0" {
   auto-version {
     github-release = "gohugoio/hugo"
   }
