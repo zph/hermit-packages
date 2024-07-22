@@ -29,7 +29,7 @@ platform "linux" "arm64" {
 // #      to = "${root}/ubi"
 // #    }
 // # }
-version "0.0.29" "0.0.30" "0.0.32" {
+version "0.0.29" "0.0.30" "0.0.32" "0.1.1" {
   auto-version {
     github-release = "houseabsolute/ubi"
   }
@@ -49,4 +49,7 @@ sha256sums = {
   "https://github.com/houseabsolute/ubi/releases/download/v0.0.32/ubi-Linux-x86_64-musl.tar.gz": "d347fecd897a292cfb58feaf2f17dfcf1c3fd292163292d5d91d27c3cf873e56",
   "https://github.com/houseabsolute/ubi/releases/download/v0.0.32/ubi-Darwin-x86_64.tar.gz": "8158ff8af836f01368bcc1f4a3663acefe9aa5f3ff3c2ccdc0b1a863323b4f14",
   "https://github.com/houseabsolute/ubi/releases/download/v0.0.32/ubi-Darwin-aarch64.tar.gz": "a30bf6498193c807edef6a3814b52593cdd17d8ce20a6ec35feab6f217d47d41",
+  "https://github.com/houseabsolute/ubi/releases/download/v0.1.1/ubi-Darwin-x86_64.tar.gz": "f06760ef82c15a8bb62c327f39ca71a0e827ff154c6296f849a0ca6cf9253f03",
+  "https://github.com/houseabsolute/ubi/releases/download/v0.1.1/ubi-Linux-x86_64-musl.tar.gz": "076cb3264a7a3eee835826a9d3522b6351971ca8ab64519904d5a6a172acee7b",
+  "https://github.com/houseabsolute/ubi/releases/download/v0.1.1/ubi-Darwin-aarch64.tar.gz": "aa4a92a846ca66117b566e2458fe0f9f4e7c2fae243c76599096cc80f771b958",
 }
