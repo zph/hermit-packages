@@ -29,7 +29,7 @@ platform "linux" "arm64" {
 // #      to = "${root}/tome-cli"
 // #    }
 // # }
-version "0.1.0-rc4" "0.1.0" {
+version "0.1.0-rc4" "0.1.0" "0.1.1" {
   auto-version {
     github-release = "zph/tome-cli"
   }
@@ -46,4 +46,7 @@ sha256sums = {
   "https://github.com/zph/tome-cli/releases/download/v0.1.0/tome-cli_linux_x86_64.tar.gz": "d8ebe0d8623e4a506fd74256e33cf9f573f74a0ebe884627bbb2d516850e973a",
   "https://github.com/zph/tome-cli/releases/download/v0.1.0/tome-cli_darwin_x86_64.tar.gz": "d52c6960af87114986108b56679cf53eb3281c7370e0fc82c1e817ab8f8ba9b4",
   "https://github.com/zph/tome-cli/releases/download/v0.1.0/tome-cli_darwin_arm64.tar.gz": "3c24329645b1de1ab77e80b5de24b9b6e5a6ee8b05d3b3b5146075c9f9c3e01d",
+  "https://github.com/zph/tome-cli/releases/download/v0.1.1/tome-cli_linux_x86_64.tar.gz": "d9f0492942b6b9cae1f678b3b96594a35759774745757644d55e36a0fbb75bc7",
+  "https://github.com/zph/tome-cli/releases/download/v0.1.1/tome-cli_darwin_x86_64.tar.gz": "c2f7cd7b9230ffe90bb88ff1f6636870f4553f199cf8368dbe947ce621725740",
+  "https://github.com/zph/tome-cli/releases/download/v0.1.1/tome-cli_darwin_arm64.tar.gz": "e988f4d89843974db2ccb2dd95d2198ceb1f673b6de27de2845f77ce8b8a2bd1",
 }
