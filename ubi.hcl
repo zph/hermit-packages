@@ -8,19 +8,19 @@ vars = {
 }
 
 platform "darwin" "amd64" {
-  source = "https://github.com/houseabsolute/ubi/releases/download/v${version}/ubi-Darwin-x86_64.tar.gz"
+  source = "https://github.com/houseabsolute/ubi/releases/download/v${version}/ubi-macOS-x86_64.tar.gz"
 }
 
 platform "darwin" "arm64" {
-  source = "https://github.com/houseabsolute/ubi/releases/download/v${version}/ubi-Darwin-aarch64.tar.gz"
+  source = "https://github.com/houseabsolute/ubi/releases/download/v${version}/ubi-macOS-arm64.tar.gz"
 }
 
 platform "linux" "amd64" {
-  source = "https://github.com/houseabsolute/ubi/releases/download/v${version}/ubi-Linux-x86_64-musl.tar.gz"
+  source = "https://github.com/houseabsolute/ubi/releases/download/v${version}/ubi-Linux-musl-x86_64.tar.gz"
 }
 
 platform "linux" "arm64" {
-  source = "https://github.com/houseabsolute/ubi/releases/download/v${version}/ubi-Linux-aarch64-musl.tar.gz"
+  source = "https://github.com/houseabsolute/ubi/releases/download/v${version}/ubi-Linux-musl-arm64.tar.gz"
 }
 
 // # on "unpack" {
