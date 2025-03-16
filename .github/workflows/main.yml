@@ -3,28 +3,37 @@ name: Auto Updater
 on:
   schedule:
     # Avoid top of hour runs
-    - cron:  '49 */8 * * *'
+    # - cron:  '49 */8 * * *'
+    - cron:  '*/10 * * * *'
 
 jobs:
   auto-update:
     runs-on: ubuntu-latest
     steps:
-    - uses: step-security/harden-runner@446798f8213ac2e75931c1b0769676d927801858 # v2.10.3
+    - name: Harden Runner
+      uses: step-security/harden-runner@446798f8213ac2e75931c1b0769676d927801858 # v2.10.0
       with:
-        egress-policy: audit
-    - uses: actions/checkout@v3
-    - uses: extractions/setup-just@v1
+        disable-sudo: true
+        egress-policy: block
+        allowed-endpoints: >
+          api.github.com:443
+          download.stateful.com:443
+          github.com:443
+          objects.githubusercontent.com:443
+          storage.googleapis.com:443
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+    - uses: extractions/setup-just@e33e0265a09d6d736e2ee1e0eb685ef1de4669ff
     - name: Activate hermit environment
       run: source bin/activate-hermit && just update
       env:
         HERMIT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Verify Changed files
-      uses: tj-actions/verify-changed-files@v19
+      uses: tj-actions/verify-changed-files@6ed7632824d235029086612d4330d659005af687
       id: verify-changed-files
       with:
         files: '*.hcl'
     - name: Run step only when any of the above files change.
-      uses: EndBug/add-and-commit@v9.1.4
+      uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5
       if: steps.verify-changed-files.outputs.files_changed == 'true'
       env:
         CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
