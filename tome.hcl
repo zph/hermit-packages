@@ -42,4 +42,9 @@ sha256sums = {
   "https://github.com/zph/tome/releases/download/v0.0.0-rc21/tome_0.0.0-rc21_linux_amd64.tar.gz": "15b86ae9a9430e0afb73cb8acb70c8fe66cee5d7889f55c7e81e9dce7bba8495",
   "https://github.com/zph/tome/releases/download/v0.0.0-rc21/tome_0.0.0-rc21_darwin_amd64.tar.gz": "3517f5c9073999e3390168201ddb86317f5d321e8735a738a9d9f3db126795a8",
   "https://github.com/zph/tome/releases/download/v0.0.0-rc21/tome_0.0.0-rc21_darwin_arm64.tar.gz": "354afe654f2a16ec8e0c13b30884fb1bd42cfe575c9d48c4c30e6d935dc6bd83",
+  "https://github.com/zph/tome/releases/download/v0.0.0-rc17/tome_0.0.0-rc17_linux_arm64.tar.gz": "e2a390a160977c1d2f305f8a6607d0a5dd3654d819b09b7abfc42c9f852fdf75",
+  "https://github.com/zph/tome/releases/download/v0.0.0-rc19/tome_0.0.0-rc19_linux_arm64.tar.gz": "6bd3ebbafa3a301a0efd8a2767527672fb1d652b401d4706f57339e7497cca6e",
+  "https://github.com/zph/tome/releases/download/v0.0.0-rc20/tome_0.0.0-rc20_linux_arm64.tar.gz": "99771f354dba5088b423732311f5b771e0a328cf306f371d2fbca70f98ca93a2",
+  "https://github.com/zph/tome/releases/download/v0.0.0-rc21/tome_0.0.0-rc21_linux_arm64.tar.gz": "e6f0989dd2005abd1e55ef69734448eeb709bfda49b81517307576c9f32b880b",
+  "https://github.com/zph/tome/releases/download/v0.11.2-rc3/tome_0.11.2-rc3_linux_arm64.tar.gz": "88e63d8a82db8d0dc3cf02b9fe5ea019613878939cca01d87905ec06c9aadf98",
 }

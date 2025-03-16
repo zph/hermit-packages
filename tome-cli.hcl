@@ -55,4 +55,9 @@ sha256sums = {
   "https://github.com/zph/tome-cli/releases/download/v0.1.3/tome-cli_linux_x86_64.tar.gz": "2069336bd7310f9fa32870fea032744a82228600ead447a7aaaf1f97e745b80c",
   "https://github.com/zph/tome-cli/releases/download/v0.1.3/tome-cli_darwin_arm64.tar.gz": "40a023e2c3eead25ac06fcc330bb7695bbb574522689f75dbd8202209c43fff9",
   "https://github.com/zph/tome-cli/releases/download/v0.1.3/tome-cli_darwin_x86_64.tar.gz": "7386bc3f1f2ae0de1a763ec47b480e78b3aa2e3dee86f6bf9fd7757e28b4b529",
+  "https://github.com/zph/tome-cli/releases/download/v0.1.0-rc4/tome-cli_linux_arm64.tar.gz": "fe4dd207c0208d9e5f752e6773d1dc7f746b31de83cd98ce295323a390ca5945",
+  "https://github.com/zph/tome-cli/releases/download/v0.1.0/tome-cli_linux_arm64.tar.gz": "168e6928e946b064d8aeb0c997d3db44d4e853167ee955a74ae1c164165ef1cc",
+  "https://github.com/zph/tome-cli/releases/download/v0.1.1/tome-cli_linux_arm64.tar.gz": "b7eef8f2ae0240763f8466cdfdcdb47642d9245ee649cba3876ef120b706c826",
+  "https://github.com/zph/tome-cli/releases/download/v0.1.2/tome-cli_linux_arm64.tar.gz": "d8ec4d0c721e4d9204b0b448c2ce0de34e677e72c40ad7d2efecb897bbba06b7",
+  "https://github.com/zph/tome-cli/releases/download/v0.1.3/tome-cli_linux_arm64.tar.gz": "b58ca6f13eeb811a4b700f1af25ff0cd01870aaff2767124780b7989b93498af",
 }

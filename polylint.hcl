@@ -36,4 +36,7 @@ sha256sums = {
   "https://github.com/zph/polylint/releases/download/v0.0.5/polylint_linux_x86_64.tar.gz": "814fb8775b3ac202ba5f0e67d88c98ca021c98dbed57977ffcfe35c88cb73ee8",
   "https://github.com/zph/polylint/releases/download/v0.0.5/polylint_darwin_x86_64.tar.gz": "80f1447fbcee99c9cee2789c5fe3048379ba60f3dc481516ced70e78016f34a2",
   "https://github.com/zph/polylint/releases/download/v0.0.5/polylint_darwin_arm64.tar.gz": "d7221479c7d0635c9d9960584bb3d68203c3d813094510a2586cb509d6da39ca",
+  "https://github.com/zph/polylint/releases/download/v0.0.2/polylint_linux_arm64.tar.gz": "daa096cd504744f422b3917bb10bfb4b981b41d2dfcc4ef71ea9ffbba7bd6670",
+  "https://github.com/zph/polylint/releases/download/v0.0.3/polylint_linux_arm64.tar.gz": "32aad77d883b9f6acc8d37098679a0f890e4150bcfd42c34be86ecc9887d03ce",
+  "https://github.com/zph/polylint/releases/download/v0.0.5/polylint_linux_arm64.tar.gz": "b40274c0fa63aabd0e3a9461a2bd3c2db13acb7b2533be49e7dfc2b4b3dd5263",
 }
