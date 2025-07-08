@@ -3,7 +3,8 @@ name: Auto Updater
 on:
   schedule:
     # Avoid top of hour runs
-    - cron:  '49 */12 * * *'
+    # Disabled zph on 2025/07/08 due to failing API key.
+    # - cron:  '49 */12 * * *'
     # - cron:  '*/10 * * * *'
 
 jobs:
