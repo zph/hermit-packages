@@ -1,10 +1,8 @@
 name: Auto Updater
 
 on:
-  # Schedule disabled on 2025/07/08 due to failing API key.
-  # Uncomment to re-enable:
-  # schedule:
-  #   - cron: '49 */12 * * *'
+  schedule:
+    - cron: '49 */12 * * *'
   workflow_dispatch:
 
 jobs:
