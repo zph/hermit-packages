@@ -17,7 +17,7 @@ description = "Formatter for many languages"
 homepage = "https://github.com/dprint/dprint"
 
 version "0.45.1" "0.46.0" "0.46.1" "0.46.2" "0.46.3" "0.47.0" "0.47.1" "0.47.2"
-        "0.47.4" "0.47.5" "0.49.0" "0.49.1" "0.50.0" {
+        "0.47.4" "0.47.5" "0.49.0" "0.49.1" "0.50.0" "0.50.2" {
   auto-version {
     github-release = "dprint/dprint"
   }
@@ -63,4 +63,7 @@ sha256sums = {
   "https://github.com/dprint/dprint/releases/download/0.50.0/dprint-aarch64-apple-darwin.zip": "b6a25e1dff9ea8d9e023548c0ec80fcde5d425e48fab60028fc0003fddf2debb",
   "https://github.com/dprint/dprint/releases/download/0.50.0/dprint-x86_64-unknown-linux-musl.zip": "74012160bb83cc09d77f9cb200e5916c411a8920289011dad0d38eb018ecfcfe",
   "https://github.com/dprint/dprint/releases/download/0.50.0/dprint-x86_64-apple-darwin.zip": "9266d40c1c565bea46cee3a195d086432682671f2f063357c8ddb66577cb24b0",
+  "https://github.com/dprint/dprint/releases/download/0.50.2/dprint-x86_64-apple-darwin.zip": "61becbf8d1b16540e364a4f00be704266ae322ee0ff3ba66a4a21033f66a8d55",
+  "https://github.com/dprint/dprint/releases/download/0.50.2/dprint-x86_64-unknown-linux-musl.zip": "4b0e7911262049ccb8e1ac5968bf7a66dc490968fe1552a123bb2d6dadf2ad95",
+  "https://github.com/dprint/dprint/releases/download/0.50.2/dprint-aarch64-apple-darwin.zip": "f534bcc054947ab2a42c069b5f6027914d252729bd15c1109812313b35a662a5",
 }
