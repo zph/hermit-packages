@@ -21,20 +21,21 @@ jobs:
           download.stateful.com:443
           github.com:443
           objects.githubusercontent.com:443
+          releases.githubusercontent.com:443
           storage.googleapis.com:443
-    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-    - uses: extractions/setup-just@e33e0265a09d6d736e2ee1e0eb685ef1de4669ff
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+    - uses: extractions/setup-just@e33e0265a09d6d736e2ee1e0eb685ef1de4669ff # v3.0.0
     - name: Activate hermit environment
       run: source bin/activate-hermit && just update
       env:
         HERMIT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Verify Changed files
-      uses: tj-actions/verify-changed-files@6ed7632824d235029086612d4330d659005af687
+      uses: tj-actions/verify-changed-files@6ed7632824d235029086612d4330d659005af687 # v20.0.1
       id: verify-changed-files
       with:
         files: '*.hcl'
     - name: Run step only when any of the above files change.
-      uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5
+      uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
       if: steps.verify-changed-files.outputs.files_changed == 'true'
       env:
         CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
