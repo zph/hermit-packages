@@ -36,10 +36,6 @@ version "2.34.0" "2.35.0" "2.36.0" {
   }
 }
 
-channel "latest" {
-  update = "72h"
-}
-
 sha256sums = {
   "https://github.com/direnv/direnv/releases/download/v2.34.0/direnv.darwin-arm64": "f26668f6aa8aeb59bf609d068a346d390b7d32293904aaec88fbb71bdcf78d29",
   "https://github.com/direnv/direnv/releases/download/v2.34.0/direnv.linux-amd64": "f7f2c814c2eae48641e4bde9bf11f463e309c8f7e3737f96c78588150e1dce25",
