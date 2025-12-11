@@ -36,10 +36,6 @@ version "0.5.2" "0.6.0" "0.6.1" "0.7.0" "0.7.1" {
   }
 }
 
-channel "latest" {
-  update = "72h"
-}
-
 sha256sums = {
   "https://github.com/houseabsolute/ubi/releases/download/v0.0.29/ubi-Darwin-x86_64.tar.gz": "23a99570f88538aa503073a77feda0711a11f116c8773fbb5d232458ea0cb752",
   "https://github.com/houseabsolute/ubi/releases/download/v0.0.29/ubi-Darwin-aarch64.tar.gz": "fc987fe560871006e0a385dd37af38b713702a1c71658fcb5ad0c720c56e1623",

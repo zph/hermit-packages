@@ -35,10 +35,6 @@ version "0.1.0-rc4" "0.1.0" "0.1.1" "0.1.2" "0.1.3" {
   }
 }
 
-channel "latest" {
-  update = "72h"
-}
-
 sha256sums = {
   "https://github.com/zph/tome-cli/releases/download/v0.1.0-rc4/tome-cli_linux_x86_64.tar.gz": "3612648201a09f686cb43440c6a56b92a469e9916c2927d00abd40fcfc424827",
   "https://github.com/zph/tome-cli/releases/download/v0.1.0-rc4/tome-cli_darwin_x86_64.tar.gz": "80fe7923172cc8b3910c57c53656d7bf20f23d6730ed1469f3f2b8cf96137214",

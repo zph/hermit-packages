@@ -29,10 +29,6 @@ version "0.3.2" {
   }
 }
 
-channel "latest" {
-  update = "72h"
-}
-
 sha256sums = {
   "https://github.com/zph/promql-cli/releases/download/v0.3.2/promql-cli_darwin_x86_64.tar.gz": "299c058787699a91ce122954517b570021f03d572f9b7a7b57fbd1a4de8f91ec",
   "https://github.com/zph/promql-cli/releases/download/v0.3.2/promql-cli_darwin_arm64.tar.gz": "81ce5c9d5d1e9e2b2345463ec0fdac0507a8970b3c048c810d9521836e99a32a",
