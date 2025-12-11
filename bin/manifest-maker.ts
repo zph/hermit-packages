@@ -40,10 +40,6 @@ version "${tagName}" {
     github-release = "${repo}"
   }
 }
-
-channel "latest" {
-  update = "72h"
-}
 `
 
 const repo = Deno.args[0]
