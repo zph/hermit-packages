@@ -13,7 +13,7 @@ jobs:
       uses: step-security/harden-runner@446798f8213ac2e75931c1b0769676d927801858 # v2.10.0
       with:
         disable-sudo: true
-        egress-policy: audit
+        egress-policy: block
         allowed-endpoints: >
           api.github.com:443
           codeload.github.com:443
