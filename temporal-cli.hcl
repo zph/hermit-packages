@@ -3,7 +3,7 @@ test = "temporal --version"
 description = "temporal cli"
 
 version "0.10.2" "0.7.0" "0.10.7" "0.11.0" "0.12.0" "0.13.0" "0.13.1" "0.13.2" "1.0.0"
-        "1.1.0" "1.1.1" "1.3.0" "1.5.1" {
+        "1.1.0" "1.1.1" "1.3.0" "1.5.1" "1.6.0" {
   auto-version {
     github-release = "temporalio/cli"
   }
@@ -61,4 +61,7 @@ sha256sums = {
   "https://github.com/temporalio/cli/releases/download/v1.5.1/temporal_cli_1.5.1_darwin_arm64.tar.gz": "cca01b7ea35ad56e2a328d9ae596bf716bd22313ef63c7a761c88354457c2415",
   "https://github.com/temporalio/cli/releases/download/v1.5.1/temporal_cli_1.5.1_darwin_amd64.tar.gz": "bbb73e2a31135abe50a1f1cdb35030c42961df618e8ce9c60ae89f201540c5d9",
   "https://github.com/temporalio/cli/releases/download/v1.5.1/temporal_cli_1.5.1_linux_amd64.tar.gz": "ddc95e08b0b076efd4ea9733a3f488eb7d2be875f8834e616cd2a37358b4852d",
+  "https://github.com/temporalio/cli/releases/download/v1.6.0/temporal_cli_1.6.0_linux_amd64.tar.gz": "055cc2d8cb91f91730448544fe2643a89fd5d9ebaae1d431811c62ccd9ca422b",
+  "https://github.com/temporalio/cli/releases/download/v1.6.0/temporal_cli_1.6.0_darwin_amd64.tar.gz": "ea9845485b1092e8ae7dbe6c4170143c7b3ea3098927a4fe52691c4627bcbec7",
+  "https://github.com/temporalio/cli/releases/download/v1.6.0/temporal_cli_1.6.0_darwin_arm64.tar.gz": "e992bfaad4de0ca33407b241cef2a595cf650e58ea32a90787bfbb99cd8a1b26",
 }
