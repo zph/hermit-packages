@@ -108,6 +108,9 @@ sha256sums = {
   "https://github.com/twpayne/chezmoi/releases/download/v2.69.4/chezmoi-darwin-amd64": "fe036bb3da259311b2df1e01691fb15673ae39765785133e75f74786eb6bcb9b",
   "https://github.com/twpayne/chezmoi/releases/download/v2.69.4/chezmoi-linux-amd64": "cd9da2c15d9e545a6cd7612565bd91c5aa3df311f7f0a89afe8cf084b7c8c124",
   "https://github.com/twpayne/chezmoi/releases/download/v2.69.4/chezmoi-darwin-arm64": "19f243e2f13cc21b78b747a2383667d7f9dd9629213d34b8388a2777dcbd0040",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi-linux-amd64": "d0c5b88944fbbad6a2184fc49f4b5994fe4894fd974451b64603e504f262859c",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi-darwin-arm64": "2fac2139ff775da9e0aad7a37656a266bb9e494988fe1bb50e3a16fc886280c7",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi-darwin-amd64": "d0b7e5c18a1bf3da53e3bd2239b4021078ff26bfb6e671b98e4e10e1690d4485",
 }
 
 platform "darwin" "amd64" {
@@ -136,7 +139,7 @@ version "2.26.0" "2.44.0" "2.45.0" "2.47.0" "2.47.1" "2.47.2" "2.47.3" "2.47.4"
         "2.48.0" "2.48.1" "2.48.2" "2.49.0" "2.49.1" "2.50.0" "2.51.0" "2.52.0" "2.52.1"
         "2.52.2" "2.52.3" "2.52.4" "2.53.0" "2.60.1" "2.61.0" "2.62.0" "2.62.1" "2.62.2"
         "2.62.3" "2.62.4" "2.62.5" "2.62.6" "2.68.1" "2.69.0" "2.69.1" "2.69.2" "2.69.3"
-        "2.69.4" {
+        "2.69.4" "2.70.0" {
   auto-version {
     github-release = "twpayne/chezmoi"
   }
