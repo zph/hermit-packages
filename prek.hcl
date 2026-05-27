@@ -31,7 +31,7 @@ platform "linux" "arm64" {
 // # }
 version "0.2.25" "0.2.27" "0.2.28" "0.2.29" "0.2.30" "0.3.0" "0.3.1" "0.3.2" "0.3.3"
         "0.3.4" "0.3.5" "0.3.6" "0.3.8" "0.3.9" "0.3.10" "0.3.11" "0.3.12" "0.3.13" "0.4.0"
-        "0.4.1" "0.4.2" {
+        "0.4.1" "0.4.2" "0.4.3" {
   auto-version {
     github-release = "j178/prek"
   }
@@ -122,4 +122,8 @@ sha256sums = {
   "https://github.com/j178/prek/releases/download/v0.4.2/prek-aarch64-apple-darwin.tar.gz": "9ea984611f3830e86d3f49b289dc34e9f2750009b9a04ee1d21e893b32df5a04",
   "https://github.com/j178/prek/releases/download/v0.4.2/prek-aarch64-unknown-linux-gnu.tar.gz": "d9960883121b5c08b1f666e1e180f77f32f8e89c2c136990e918e0605330e7f2",
   "https://github.com/j178/prek/releases/download/v0.4.2/prek-x86_64-unknown-linux-gnu.tar.gz": "5d9c66accf6905027ff4ea81bb8888843b7540a7741aa2363556214764c29086",
+  "https://github.com/j178/prek/releases/download/v0.4.3/prek-x86_64-unknown-linux-gnu.tar.gz": "8a8210d64476657cac3e797afa109011d8d872c09e3a407f50c5a4dde063b381",
+  "https://github.com/j178/prek/releases/download/v0.4.3/prek-aarch64-unknown-linux-gnu.tar.gz": "02e5731ce90e737bade91abef4c76c13495b9cc9290f609dfcb2e7b2a05b532e",
+  "https://github.com/j178/prek/releases/download/v0.4.3/prek-x86_64-apple-darwin.tar.gz": "c2f1d49b20a2b10a147195d5e33b03ca51430a852ea6cac568853dda5b89fbb8",
+  "https://github.com/j178/prek/releases/download/v0.4.3/prek-aarch64-apple-darwin.tar.gz": "80e10ab3961940ef4d5b0cde03ed670f8176dd60729a03e6a7d92ae00700e072",
 }
