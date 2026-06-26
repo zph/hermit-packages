@@ -20,7 +20,7 @@ version "2.2.0" "3.0.2" "3.1.1" "3.2.0" "3.2.1" "3.2.2" "3.2.3" "3.2.4" "3.2.5" 
         "3.2.7" "3.2.8" "3.3.0" "3.3.1" "3.3.2" "3.3.3" "3.3.4" "3.3.5" "3.4.0" "3.4.1" "3.5.0"
         "3.5.1" "3.5.2" "3.6.0" "3.6.1" "3.6.2" "3.7.0" "3.7.1" "3.8.2" "3.8.3" "3.8.4" "3.9.0"
         "3.9.2" "3.12.6" "3.12.7" "3.12.8" "3.13.0" "3.13.1" "3.13.2" "3.14.0" "3.16.4"
-        "3.16.5" "3.16.6" "3.16.10" "3.16.11" "3.16.15" {
+        "3.16.5" "3.16.6" "3.16.10" "3.16.11" "3.16.15" "3.16.16" {
   auto-version {
     github-release = "stateful/runme"
     version-pattern = "v(.*)"
@@ -166,4 +166,7 @@ sha256sums = {
   "https://download.stateful.com/runme/3.16.15/runme_linux_x86_64.tar.gz": "d8376bb96938c99b2b789d31b2a7999e982a5a74e685c6bf09a2e52707e6171b",
   "https://download.stateful.com/runme/3.16.15/runme_darwin_x86_64.tar.gz": "9ee5cfc133508d46a4c7a72ca07dc5529176caa0a0291b09609f97efc7b79741",
   "https://download.stateful.com/runme/3.16.15/runme_darwin_arm64.tar.gz": "a6ab39b9c427f61929bfb616a6e2a5a3161295f73265364991867c6b146d6e00",
+  "https://download.stateful.com/runme/3.16.16/runme_darwin_x86_64.tar.gz": "c032ee3c81de870441a4c03bda0c9d6c5491ea84881440fdfc8d69a6e9b679d2",
+  "https://download.stateful.com/runme/3.16.16/runme_linux_x86_64.tar.gz": "81efafc163ff2826c2e240c884c62bd53fea55226e162a7b69987676f6df90af",
+  "https://download.stateful.com/runme/3.16.16/runme_darwin_arm64.tar.gz": "c46bd77144de1215ab09cc22e3a3988a9a501f8747694791156d16d50dffa082",
 }
