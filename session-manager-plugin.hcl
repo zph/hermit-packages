@@ -29,7 +29,7 @@ platform "linux" "arm64" {
 // #      to = "${root}/session-manager-plugin"
 // #    }
 // # }
-version "0.0.0-1.2.694.8" {
+version "0.0.0-1.2.694.8" "0.0.0-1.2.694.9" {
   auto-version {
     github-release = "zph/session-manager-plugin"
   }
@@ -40,4 +40,8 @@ sha256sums = {
   "https://github.com/zph/session-manager-plugin/releases/download/v0.0.0-1.2.694.8/session-manager-plugin_0.0.0-1.2.694.8_darwin_x86_64.tar.gz": "44807b9c2aa918d3f407abe584f171aa4eec990909fb0071672b75a24fda5433",
   "https://github.com/zph/session-manager-plugin/releases/download/v0.0.0-1.2.694.8/session-manager-plugin_0.0.0-1.2.694.8_darwin_arm64.tar.gz": "eb9314a1c90853df2aada60a6e37b4c57536c27b9159ac775c51c7cc4f050ec9",
   "https://github.com/zph/session-manager-plugin/releases/download/v0.0.0-1.2.694.8/session-manager-plugin_0.0.0-1.2.694.8_linux_arm64.deb": "db93fbeb3db02225e9086492e9339560e12735ea3e3f5d278a2062a54d54e7ab",
+  "https://github.com/zph/session-manager-plugin/releases/download/v0.0.0-1.2.694.9/session-manager-plugin_0.0.0-1.2.694.9_linux_amd64.deb": "4bba681069788b95727b25c1a1a5e2b4b71321554a1245f41eeec9eaaf98326b",
+  "https://github.com/zph/session-manager-plugin/releases/download/v0.0.0-1.2.694.9/session-manager-plugin_0.0.0-1.2.694.9_darwin_x86_64.tar.gz": "441c0d8f7b36d819cdf1420800c9f0a09eda2d41de9c4f990669841dd2e8cf69",
+  "https://github.com/zph/session-manager-plugin/releases/download/v0.0.0-1.2.694.9/session-manager-plugin_0.0.0-1.2.694.9_darwin_arm64.tar.gz": "338f3ca7ea664a09ceb0c50823818b5d1af917b9fa441c5977ef44ad785b4535",
+  "https://github.com/zph/session-manager-plugin/releases/download/v0.0.0-1.2.694.9/session-manager-plugin_0.0.0-1.2.694.9_linux_arm64.deb": "36e94a0722fdfd43f17dc64704288cf84b55ef2953cb74063360b23c23bc491e",
 }
