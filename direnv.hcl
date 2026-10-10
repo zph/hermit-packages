@@ -30,7 +30,7 @@ on "unpack" {
   }
 }
 
-version "2.34.0" "2.35.0" "2.36.0" "2.37.1" "2.38.1" {
+version "2.34.0" "2.35.0" "2.36.0" "2.37.1" "2.38.1" "2.38.2" {
   auto-version {
     github-release = "direnv/direnv"
   }
@@ -57,4 +57,8 @@ sha256sums = {
   "https://github.com/direnv/direnv/releases/download/v2.38.1/direnv.darwin-arm64": "e7819f1b8ef73cc2d96e7b938b0c56aeff052d3872deae6daad0b16bd700386c",
   "https://github.com/direnv/direnv/releases/download/v2.38.1/direnv.linux-arm64": "a5deedd4165c94e629a4f3faf74fc0425d3c34a2fcee438a95d628a5f41f5bd8",
   "https://github.com/direnv/direnv/releases/download/v2.38.1/direnv.darwin-amd64": "a0501604814f2dcc19a7588e17701c546327880fb7466f779033051be5a00586",
+  "https://github.com/direnv/direnv/releases/download/v2.38.2/direnv.linux-amd64": "148820a187930d36ca6a204504e5cdb30d8396cd1a97e64c3b3f10d793c11247",
+  "https://github.com/direnv/direnv/releases/download/v2.38.2/direnv.darwin-amd64": "91ad9ce96e156065ba2c751a7392ee748fa8e49b063e14d7203df6e957c212f9",
+  "https://github.com/direnv/direnv/releases/download/v2.38.2/direnv.linux-arm64": "ec2a32dbe2f19dd085bd9315a1b4ea88b55ec288aa7eabe8723490baf466cb23",
+  "https://github.com/direnv/direnv/releases/download/v2.38.2/direnv.darwin-arm64": "30443c413e74614a53deb90234e9c97661b1041a0f4aca601ceb482a578ae8b6",
 }
