@@ -30,7 +30,8 @@ platform "linux" "arm64" {
 // #    }
 // # }
 // Earlier versions use a different release download scheme and are not supported.
-version "0.5.2" "0.6.0" "0.6.1" "0.7.0" "0.7.1" "0.8.4" "0.9.0" "0.10.0" "0.12.0" {
+version "0.5.2" "0.6.0" "0.6.1" "0.7.0" "0.7.1" "0.8.4" "0.9.0" "0.10.0" "0.12.0"
+        "0.13.0" {
   auto-version {
     github-release = "houseabsolute/ubi"
   }
@@ -85,4 +86,8 @@ sha256sums = {
   "https://github.com/houseabsolute/ubi/releases/download/v0.12.0/ubi-macOS-x86_64.tar.gz": "7152851ccd8dbd117aa9433b35c23fb37c4a0dab4681c7ca961698b04da1c0cc",
   "https://github.com/houseabsolute/ubi/releases/download/v0.12.0/ubi-Linux-musl-x86_64.tar.gz": "a4a12a324c32b90c105e256ac3bef9f45569346636be71fc008ecbc6baa6f616",
   "https://github.com/houseabsolute/ubi/releases/download/v0.12.0/ubi-Linux-musl-arm64.tar.gz": "8969a5c824de859aaf19fe71a869ed84527564df33677263893758f10502e428",
+  "https://github.com/houseabsolute/ubi/releases/download/v0.13.0/ubi-Linux-musl-arm64.tar.gz": "8bc8d2a56eaf9aceaa26d8334f8175649b29558931d19ff68a71226f0ad2cb37",
+  "https://github.com/houseabsolute/ubi/releases/download/v0.13.0/ubi-Linux-musl-x86_64.tar.gz": "fa5ce75307cd691c8260d7e83f1b71d66c54aa1ffc7aedb646adc447815098aa",
+  "https://github.com/houseabsolute/ubi/releases/download/v0.13.0/ubi-macOS-arm64.tar.gz": "c43b0e9ea7691c92dbcf8d6c00e3ca97036ee6c14b1d354357d49aeec598ac82",
+  "https://github.com/houseabsolute/ubi/releases/download/v0.13.0/ubi-macOS-x86_64.tar.gz": "23a427232585d4135644f8a8bcc32aaed4b0eeca6e3f414ace42b7e06432ca56",
 }
