@@ -1,5 +1,8 @@
 binaries = ["chezmoi"]
 sha256sums = {
+  "https://github.com/twpayne/chezmoi/releases/download/v2.74.0/chezmoi_2.74.0_darwin_amd64.tar.gz": "3d30cb05efae2f4a68519d6d0e8856765f2b21a0686e66498ee6d2de7707e5e6",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.74.0/chezmoi_2.74.0_darwin_arm64.tar.gz": "9d89672a597a9333ab47ea5173fcececb85c04864205686a7aa5699c3d8bd98c",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.74.0/chezmoi_2.74.0_linux_amd64.tar.gz": "1b98a567f726f41540414aea4caf912699d53e248b29ccf8369cf553657b2374",
   "https://github.com/twpayne/chezmoi/releases/download/v2.26.0/chezmoi-linux-amd64": "af8b77e46eaef1d9630a50525bccb426b47943300a3e9e329d6f82c366ed9ed0",
   "https://github.com/twpayne/chezmoi/releases/download/v2.26.0/chezmoi-darwin-amd64": "ddaa67cdf7f6f9df7e6204022881eb9a9914738fee716140b34c60670737120f",
   "https://github.com/twpayne/chezmoi/releases/download/v2.26.0/chezmoi-darwin-arm64": "60029604244e92aaa6705d0072e4eabe01f9cdde71bdee7d1a4e2d9ee395999a",
@@ -155,25 +158,6 @@ sha256sums = {
   "https://github.com/twpayne/chezmoi/releases/download/v2.73.3/chezmoi-darwin-arm64": "13cb1bd4290607765a39b187b18ffb6b4a36cbccf4b5a966bbebd72bc3319f8b",
 }
 
-platform "darwin" "amd64" {
-  source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi-${os}-${arch}"
-}
-
-platform "darwin" "arm64" {
-  source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi-${os}-${arch}"
-}
-
-platform "linux" "amd64" {
-  source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi-${os}-${arch}"
-}
-
-on "unpack" {
-  rename {
-    from = "${root}/chezmoi-${os}-${arch}"
-    to = "${root}/chezmoi"
-  }
-}
-
 description = "Manage your dotfiles across multiple diverse machines, securely."
 homepage = "https://chezmoi.io"
 
@@ -183,6 +167,34 @@ version "2.26.0" "2.44.0" "2.45.0" "2.47.0" "2.47.1" "2.47.2" "2.47.3" "2.47.4"
         "2.62.3" "2.62.4" "2.62.5" "2.62.6" "2.68.1" "2.69.0" "2.69.1" "2.69.2" "2.69.3"
         "2.69.4" "2.70.0" "2.70.1" "2.70.2" "2.70.3" "2.70.4" "2.70.5" "2.71.0" "2.71.1"
         "2.72.0" "2.72.1" "2.72.2" "2.73.0" "2.73.1" "2.73.2" "2.73.3" {
+  platform "darwin" "amd64" {
+    source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi-${os}-${arch}"
+  }
+
+  platform "darwin" "arm64" {
+    source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi-${os}-${arch}"
+  }
+
+  platform "linux" "amd64" {
+    source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi-${os}-${arch}"
+  }
+
+  on "unpack" {
+    rename {
+      from = "${root}/chezmoi-${os}-${arch}"
+      to = "${root}/chezmoi"
+    }
+  }
+}
+
+// Recent releases no longer publish the standalone darwin-amd64 binary.
+version "2.74.0" {
+  source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi_${version}_${os}_${arch}.tar.gz"
+
+  platform "darwin" "amd64" {}
+  platform "darwin" "arm64" {}
+  platform "linux" "amd64" {}
+
   auto-version {
     github-release = "twpayne/chezmoi"
   }
