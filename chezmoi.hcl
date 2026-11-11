@@ -156,8 +156,12 @@ sha256sums = {
   "https://github.com/twpayne/chezmoi/releases/download/v2.73.3/chezmoi-darwin-amd64": "190118a03910231476c3110ff18176724f48a8ff110c5bb48c60de68da3c3098",
   "https://github.com/twpayne/chezmoi/releases/download/v2.73.3/chezmoi-linux-amd64": "56db674bb755c6655d67df3dec3e6727631d1291f5fc799d3f1aded6d0e56472",
   "https://github.com/twpayne/chezmoi/releases/download/v2.73.3/chezmoi-darwin-arm64": "13cb1bd4290607765a39b187b18ffb6b4a36cbccf4b5a966bbebd72bc3319f8b",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.74.0/chezmoi_2.74.0_linux_arm64.tar.gz": "bf89495d1aab5e4fa0fc1ba9457837b34ee8dec9b787570f2de3e1c12a5835a5",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.74.1/chezmoi_2.74.1_darwin_amd64.tar.gz": "b2229c6ff9eb7d1f10d098aac94241da652dd7df989c7ef35df6777dbe00d397",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.74.1/chezmoi_2.74.1_linux_amd64.tar.gz": "ae01c66b1a6dbf563667c63fbbd9986b3cfa3c98dd266ddee732f63e8af2e9d1",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.74.1/chezmoi_2.74.1_darwin_arm64.tar.gz": "fbc7b86c7b36eb0448e2a99a616b6d32f022d1f3895076ad44f4c5d65a77fe60",
+  "https://github.com/twpayne/chezmoi/releases/download/v2.74.1/chezmoi_2.74.1_linux_arm64.tar.gz": "8c62619c4303770342e7c7e75d168b6cc6efee4ad5e4b994980de7cf794d68e2",
 }
-
 description = "Manage your dotfiles across multiple diverse machines, securely."
 homepage = "https://chezmoi.io"
 
@@ -188,12 +192,17 @@ version "2.26.0" "2.44.0" "2.45.0" "2.47.0" "2.47.1" "2.47.2" "2.47.3" "2.47.4"
 }
 
 // Recent releases no longer publish the standalone darwin-amd64 binary.
-version "2.74.0" {
+version "2.74.0" "2.74.1" {
   source = "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi_${version}_${os}_${arch}.tar.gz"
 
-  platform "darwin" "amd64" {}
-  platform "darwin" "arm64" {}
-  platform "linux" "amd64" {}
+  platform "darwin" "amd64" {
+  }
+
+  platform "darwin" "arm64" {
+  }
+
+  platform "linux" "amd64" {
+  }
 
   auto-version {
     github-release = "twpayne/chezmoi"
